@@ -1,0 +1,42 @@
+footer {
+    background-color: #363839;
+    direction: rtl;
+    padding: 25px 10px 10px 10px;
+    margin-top: auto;
+
+    h3 {
+        color: white;
+        border-bottom: 2px solid #6d6d6d;
+        line-height: 2.5em;
+        margin-bottom: 2%;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 6px;
+        width: 100%;
+        color: white;
+        text-align: right;
+        td {
+            text-align: left;
+        }
+    }
+    .links {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+    .watermark {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        max-width: 1400px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 13px;
+        a {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+#work {
+    background-color: #223139;
+    text-align: center;
+    margin-top: 5%;
+    .section-content {
+        margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 32px;
+        .project {
+            font-size: 0;
+            overflow: hidden;
+            height: auto;
+            filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+            transition: filter 0.25s ease-in-out;
+            max-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0;
+            &:hover {
+                filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.15));
+                img {
+                    transform: scale(1.05);
+                }
+            }
+            img {
+                width: 100%;
+                transition: transform 0.2s ease-in-out;
+            }
+        }
+    }
+}
