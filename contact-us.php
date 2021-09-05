@@ -34,10 +34,10 @@
     <div class="contact-form">
         <div class="right-sec">
             <h2>شركة أي تي جو لبرمجة التطبيقات والمواقع في مصر</h2>
-            <h3 style="text-align: center;margin-bottom: 5%;font-size: 24px;">نقدم لك استشارات فنية ومالية مجاناً</h3>
+            <h3 style="text-align: center;margin-bottom: 5%;margin-top:5%;font-size: 24px;">نقدم لك استشارات فنية ومالية مجاناً</h3>
             <form method="POST">
-                <input type="text" name="name" placeholder="اسمك">
-                <input type="text" name="name" placeholder="بريدك الالكتروني">
+                <input type="text" name="name" placeholder="اسمك" autocomplete="off">
+                <input type="email" name="email" placeholder="بريدك الالكتروني" autocomplete="off">
                 <textarea name="message" placeholder="رسالتك"></textarea>
                 <input type="submit" name="send" value="ارسال رسالتك" class="send-message">
             </form>

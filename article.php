@@ -1,3 +1,32 @@
+<?php
+include 'connection.php';
+if (isset($_GET['article'])) {
+    $id = $_GET['article'];
+    $sql = "SELECT * FROM blog WHERE id = '$id'";
+    $query = mysqli_query($connect, $sql);
+    if (mysqli_num_rows($query) > 0) {
+        while ($row = mysqli_fetch_array($query)) {
+            $title = $row['title'];
+            $content = $row['content'];
+            $pic = base64_encode($row['pic']);
+        }
+    } else {
+        echo '
+                <script>
+                alert("عنوان URL خاطئ");
+                window.location.href="blog.php";
+                </script>
+                ';
+    }
+} else {
+    echo '
+            <script>
+            alert("عنوان URL خاطئ");
+            window.location.href="blog.php";
+            </script>
+            ';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +34,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أي تي جو للحلول الرقمية</title>
+    <title><?php echo "$title" ?>أي تي جو للحلول الرقمية</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,35 +50,6 @@
 
     <header class="header-about">
         <?php include('navbar.php') ?>
-        <?php
-        include 'connection.php';
-        if (isset($_GET['article'])) {
-            $id = $_GET['article'];
-            $sql = "SELECT * FROM blog WHERE id = '$id'";
-            $query = mysqli_query($connect, $sql);
-            if (mysqli_num_rows($query) > 0) {
-                while ($row = mysqli_fetch_array($query)) {
-                    $title = $row['title'];
-                    $content = $row['content'];
-                    $pic = base64_encode($row['pic']);
-                }
-            } else {
-                echo '
-                <script>
-                alert("عنوان URL خاطئ");
-                window.location.href="blog.php";
-                </script>
-                ';
-            }
-        } else {
-            echo '
-            <script>
-            alert("عنوان URL خاطئ");
-            window.location.href="blog.php";
-            </script>
-            ';
-        }
-        ?>
         <h1><?php echo "$title"; ?></h1>
         <div style="border-bottom: 5px solid orange;width: 55px;margin-top: 0.5%;"></div>
     </header>

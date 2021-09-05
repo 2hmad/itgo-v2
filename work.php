@@ -63,7 +63,7 @@
                             <?php
                             include 'connection.php';
                             $id = $_GET['id'];
-                            $sql = "SELECT pic_one, pic_two, pic_three, pic_four, pic_five FROM portfolio WHERE id = '$id'";
+                            $sql = "SELECT * FROM portfolio WHERE id = '$id'";
                             $query = mysqli_query($connect, $sql);
                             while ($row = mysqli_fetch_array($query)) {
                                 $pic_one = base64_encode($row['pic_one']);
