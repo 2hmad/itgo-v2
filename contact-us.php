@@ -49,11 +49,15 @@
             </div>
             <div>
                 <h2>اتصل بنا</h2>
-                <p style="direction: ltr;font-size: 17px;">+201010142554</p>
+                <p style="direction: ltr;font-size: 17px;">
+                    <a href="tel:+201010142554" style="color: white;text-decoration: none;">+201010142554</a>
+                </p>
             </div>
             <div>
                 <h2>البريد الالكتروني</h2>
-                <p style="direction: ltr;font-size: 17px;">info@itgo-solutions.com</p>
+                <p style="direction: ltr;font-size: 17px;">
+                    <a href="mailto:info@itgo-solutions.com" style="color: white;text-decoration: none;">info@itgo-solutions.com</a>
+                </p>
             </div>
             <div style="display: flex;justify-content: center;gap: 45px;">
                 <a href="https://www.facebook.com/itgosolutions" style="color: white;font-size: 35px;text-decoration: none;"><i class="fab fa-facebook"></i></a>

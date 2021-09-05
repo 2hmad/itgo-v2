@@ -6,13 +6,7 @@
         <a href="index.php">الرئيسية</a>
         <a href="about-us.php">تعرف علينا</a>
         <a href="portfolio.php">اعمالنا</a>
-        <a href="#">المدونة</a>
+        <a href="blog.php">المدونة</a>
         <a href="contact-us.php">اتصل بنا</a>
-    </div>
-</nav>
-
-<nav class="navbar-fixed-top-mobile" style="display: none;">
-    <div class="logo">
-        <img src="images/itgo-white.png">
     </div>
 </nav>

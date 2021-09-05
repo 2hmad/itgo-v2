@@ -17,36 +17,36 @@
 
     <header class="header-about">
         <?php include('navbar.php') ?>
-        <h1>اعمالنا السابقة</h1>
+        <h1>المدونة</h1>
         <div style="border-bottom: 5px solid orange;width: 55px;margin-top: 0.5%;"></div>
     </header>
 
-
-    <section class="portfolio">
+    <section class="blog-articles">
 
         <?php
-        include 'connection.php';
-        $sql = "SELECT * FROM portfolio ORDER BY id DESC";
+        include('connection.php');
+        $sql = "SELECT * FROM blog ORDER BY id DESC";
         $query = mysqli_query($connect, $sql);
-        while ($row = mysqli_fetch_array($query)) {
-            $id = $row['id'];
-            $title = $row['title'];
-            $details = $row['details'];
-            $pic_one = base64_encode($row['pic_one']);
-            echo '
-            <div class="work">
-            <div class="wg-box-content">
-                <a href="work.php?id='.$id.'">
-                    <div class="wg-box-content-overlay"></div>
-                    <img class="wg-box-content-image" src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '">
-                    <div class="wg-box-content-details wg-box-fadeIn-bottom">
-                        <h3 class="wg-box-content-title">'.$title.'</h3>
-                        <p class="wg-box-content-text">'.$details.'</p>
-                    </div>
-                </a>
+        if (mysqli_num_rows($query) > 0) {
+            while ($row = mysqli_fetch_array($query)) {
+                $id = $row['id'];
+                $title = $row['title'];
+                $content = $row['content'];
+                $pic = base64_encode($row['pic']);
+                echo '
+            <div class="article">
+            <a href="article.php?article=' . $id . '" style="color: black;text-decoration:none">
+                <div class="article-img">
+                    <img src="data:image/png;base64,' . $pic . '" alt="'.$title.'">
+                </div>
+                <div class="article-content">
+                    <h1 class="article-title">' . $title . '</h1>
+                    <p class="article-desc">' . $content . '</p>
+                </div>
+            </a>
             </div>
-        </div>
             ';
+            }
         }
         ?>
 

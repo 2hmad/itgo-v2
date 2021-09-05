@@ -2,17 +2,36 @@
     --green: #05f;
 }
 
+@font-face {
+    font-family: Almarai-Regular;
+    src: url('../css/Almarai-Regular.ttf');
+}
+@font-face {
+    font-family: Almarai-Bold;
+    src: url('../css/Almarai-Bold.ttf');
+}
+@font-face {
+    font-family: Almarai-Extrabold;
+    src: url('../css/Almarai-ExtraBold.ttf');
+}
+@font-face {
+    font-family: Almarai-light;
+    src: url('../css/Almarai-Light.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Almarai', sans-serif;
+    font-family: 'Almarai-Regular', sans-serif;
 }
+
 body {
     min-height: 100vh;
-    display:flex; 
-    flex-direction:column;   
+    display: flex;
+    flex-direction: column;
 }
+
 .header {
     height: 830px;
 }
@@ -233,8 +252,8 @@ nav {
     }
 
     .slick-slide img {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
     }
 }
 
@@ -268,7 +287,7 @@ nav {
 
     .btn {
         width: 150px;
-        padding: 8px;
+        padding: 15px;
         background: #3ee3a9;
         font-weight: bold;
         border: none;
@@ -346,3 +365,4 @@ nav {
 @import "portfolio";
 @import "preview-work";
 @import "contact-us";
+@import "blog";

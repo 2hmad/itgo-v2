@@ -8,11 +8,8 @@
     <title>أي تي جو للحلول الرقمية</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="sass/main.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,9 +18,16 @@
     <header class="header">
         <?php include('navbar.php') ?>
         <div class="slick">
-            <div><img src="images/1.png"></div>
-            <div><img src="images/2.jpg"></div>
-            <div><img src="images/3.jpg"></div>
+            <?php
+            include 'connection.php';
+            $sql = "SELECT * FROM portfolio ORDER BY id DESC LIMIT 4";
+            $query = mysqli_query($connect, $sql);
+            while ($row = mysqli_fetch_array($query)) {
+                $title = $row['title'];
+                $pic_one = base64_encode($row['pic_one']);
+                echo '<div><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '"></div>';
+            }
+            ?>
         </div>
     </header>
 
@@ -76,7 +80,7 @@
             <p style="line-height: 2em;color:#7b7b7b;font-size: 18px;">
                 نحن نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، فهل لديك فكرة تطبيق او موقع لمشروعك ؟ في شركة أي تي جو لحلول البرمجيات ، نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة يحقق لك أفضل ربح. نحن نقدم لك أفضل جودة وأدق تصميم، نوفر لك دعم فني وضمان مجاني لمدة عام.
             </p>
-            <a href="#"><button type="button">اعرف اكثر عنا</button></a>
+            <a href="about-us.php"><button type="button">اعرف اكثر عنا</button></a>
         </div>
     </div>
 
@@ -84,10 +88,16 @@
         <div class="our-clients">
             <h2 style="font-size: 25px;margin-bottom:3%;margin-top: 5%;">عملاء شاركت نجاحهم معنا</h2>
             <div class="clients">
-                <div><img src="images/clients/yanabee.jpg"></div>
-                <div><img src="images/clients/yanabee.jpg"></div>
-                <div><img src="images/clients/yanabee.jpg"></div>
-                <div><img src="images/clients/yanabee.jpg"></div>
+
+                <?php
+                $sql = "SELECT * FROM clients ORDER BY id DESC";
+                $query = mysqli_query($connect, $sql);
+                while ($row = mysqli_fetch_array($query)) {
+                    $name = $row['name'];
+                    $logo = base64_encode($row['logo']);
+                    echo '<div><img src="data:image/png;base64,' . $logo . '" alt="' . $name . '" style="object-fit: contain;"></div>';
+                }
+                ?>
             </div>
         </div>
     </div>
@@ -97,17 +107,22 @@
             <h2 style="font-size: 15px;color: #ffffff;margin-top: 2%;margin-bottom: 1%;font-weight: 400;">شركة برمجة مصرية</h2>
             <h1 class="section-title" style="margin-bottom: 4%;">بعض من سابق اعمالنا</h1>
             <div class="section-content home">
-                <a href="#" class="project">
-                    <img src="images/1.png" style="object-fit: cover;height: 100%;" />
-                </a>
-                <a href="#" class="project">
-                    <img src="images/2.jpg" style="object-fit: cover;height: 100%;" />
-                </a>
-                <a href="#" class="project">
-                    <img src="images/3.jpg" style="object-fit: cover;height: 100%;" />
-                </a>
+                <?php
+                $sql = "SELECT * FROM portfolio ORDER BY rand() LIMIT 6";
+                $query = mysqli_query($connect, $sql);
+                while ($row = mysqli_fetch_array($query)) {
+                    $id = $row['id'];
+                    $title = $row['title'];
+                    $pic_one = base64_encode($row['pic_one']);
+                    echo '
+                    <a href="work.php?id='.$id.'" class="project">
+                    <img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: cover;height: 100%;">
+                    </a>
+                    ';
+                }
+                ?>
             </div>
-            <a href="#">
+            <a href="portfolio.php">
                 <button class="btn">رؤية سابق اعمالنا</button>
             </a>
         </div>
@@ -196,6 +211,7 @@
             autoplay: true,
             autoplaySpeed: 2000,
             infinite: true,
+            arrows: false,
             responsive: [{
                     breakpoint: 1024,
                     settings: {

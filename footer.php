@@ -53,11 +53,11 @@
         <div class="links">
             <h3>روابط مهمة</h3>
             <div style="display: flex;flex-direction: column;line-height: 2.3em;">
-                <a href="#">اسلوب التعاقد</a>
+                <a href="contract.php">اسلوب التعاقد</a>
                 <a href="#">الضمان والدعم الكامل</a>
                 <a href="#">لغات البرمجة المستخدمة</a>
-                <a href="#">المدونة</a>
-                <a href="#">اتصل بنا</a>
+                <a href="blog.php">المدونة</a>
+                <a href="contact-us.php">اتصل بنا</a>
             </div>
         </div>
     </div>

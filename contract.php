@@ -17,39 +17,15 @@
 
     <header class="header-about">
         <?php include('navbar.php') ?>
-        <h1>اعمالنا السابقة</h1>
+        <h1>اسلوب التعاقد معنا</h1>
         <div style="border-bottom: 5px solid orange;width: 55px;margin-top: 0.5%;"></div>
     </header>
 
-
-    <section class="portfolio">
-
-        <?php
-        include 'connection.php';
-        $sql = "SELECT * FROM portfolio ORDER BY id DESC";
-        $query = mysqli_query($connect, $sql);
-        while ($row = mysqli_fetch_array($query)) {
-            $id = $row['id'];
-            $title = $row['title'];
-            $details = $row['details'];
-            $pic_one = base64_encode($row['pic_one']);
-            echo '
-            <div class="work">
-            <div class="wg-box-content">
-                <a href="work.php?id='.$id.'">
-                    <div class="wg-box-content-overlay"></div>
-                    <img class="wg-box-content-image" src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '">
-                    <div class="wg-box-content-details wg-box-fadeIn-bottom">
-                        <h3 class="wg-box-content-title">'.$title.'</h3>
-                        <p class="wg-box-content-text">'.$details.'</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-            ';
-        }
-        ?>
-
+    <section class="how-contract">
+        <h2 style="font-size: 15px;color: orange;">شركة تقنية المعلومات</h2>
+        <p style="line-height: 2em;font-size: 15px;">
+            بدأنا منذ عام 2020، خصصنا فى تصميم المواقع انطلاقاتنا فى تصميم وبرمجة التطبيقات المتطوِرة فى السوق السعودية والمصري والكويتي بعلامة توحي بالجودة والإنجازات. مؤثرين بأعمالنا لنصبح كل ما يحتاجه المستخدم لجميع احتياجاتِه العملية وأكثر. نفتخر اليوم أننا ساعدنا بتغيير صِناعة البرمجيات وريادة الأعمال, بوجود شركائنا في النجاح من اكبر العلامات التجارية خبراتنا وليدة تجارب كثيرة,وفريق لا يوجد لطموحه وقدراته حدود, نستطيع اليوم أن نتطلع بلا قيود وأن نستعد لما هو آتيٍ! مقدمين على الغد بروح المثابرة والإيمان بأن المستحيل هو فقط بوابة النجاح
+        </p>
     </section>
 
 

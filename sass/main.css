@@ -2,12 +2,32 @@
   --green: #05f;
 }
 
+@font-face {
+  font-family: Almarai-Regular;
+  src: url("../css/Almarai-Regular.ttf");
+}
+
+@font-face {
+  font-family: Almarai-Bold;
+  src: url("../css/Almarai-Bold.ttf");
+}
+
+@font-face {
+  font-family: Almarai-Extrabold;
+  src: url("../css/Almarai-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Almarai-light;
+  src: url("../css/Almarai-Light.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Almarai', sans-serif;
+  font-family: 'Almarai-Regular', sans-serif;
 }
 
 body {
@@ -268,8 +288,8 @@ nav .nav-links {
 }
 
 .home-four .slick-slide img {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
 }
 
 #work {
@@ -310,7 +330,7 @@ nav .nav-links {
 
 #work .btn {
   width: 150px;
-  padding: 8px;
+  padding: 15px;
   background: #3ee3a9;
   font-weight: bold;
   border: none;
@@ -981,5 +1001,78 @@ div.contact-form .left-sec h2 {
 
 div.contact-form .left-sec div {
   margin-bottom: 5%;
+}
+
+section.blog-articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1200px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  direction: rtl;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px;
+}
+
+section.blog-articles .article {
+  max-width: 300px;
+}
+
+section.blog-articles .article .article-img {
+  max-width: 300px;
+  height: 200px;
+}
+
+section.blog-articles .article .article-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.blog-articles .article .article-content {
+  margin-top: 2%;
+  line-height: 4em;
+}
+
+section.blog-articles .article .article-content .article-desc {
+  line-height: 1.5em;
+  height: 3em;
+  width: 100%;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+section.article-page {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+section.article-page .article-pic {
+  width: 80%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.article-page .article-content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  direction: rtl;
+  margin-top: 3%;
+  line-height: 3em;
+}
+
+section.article-page img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main.css.map */
