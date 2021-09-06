@@ -8,5 +8,10 @@
         <a href="portfolio.php">اعمالنا</a>
         <a href="blog.php">المدونة</a>
         <a href="contact-us.php">اتصل بنا</a>
+      
     </div>
+    <div class="menu">
+        <i class="fal fa-bars"></i>
+        </div>
+    
 </nav>

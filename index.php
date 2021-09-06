@@ -10,15 +10,33 @@
     <link rel="stylesheet" href="sass/main.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-
+    <div class="sidebar">
+        <div class="close">
+        <i class="fal fa-times-circle"></i>
+        </div>
+        <div class="links">
+        <a href="index.php">الرئيسية</a>
+        <a href="about-us.php">تعرف علينا</a>
+        <a href="portfolio.php">اعمالنا</a>
+        <a href="blog.php">المدونة</a>
+        <a href="contact-us.php">اتصل بنا</a>
+        </div>
+    </div>
+    <?php include('navbar.php') ?>
     <header class="header">
-        <?php include('navbar.php') ?>
-        <div class="slick">
-            <?php
+        <div class="overlay">
+
+            </div>
+            <div class="slick">
+                <?php
             include 'connection.php';
             $sql = "SELECT * FROM portfolio ORDER BY id DESC LIMIT 4";
             $query = mysqli_query($connect, $sql);
@@ -108,7 +126,7 @@
             <h1 class="section-title" style="margin-bottom: 4%;">بعض من سابق اعمالنا</h1>
             <div class="section-content home">
                 <?php
-                $sql = "SELECT * FROM portfolio ORDER BY rand() LIMIT 6";
+                $sql = "SELECT * FROM portfolio ORDER BY rand() LIMIT 4";
                 $query = mysqli_query($connect, $sql);
                 while ($row = mysqli_fetch_array($query)) {
                     $id = $row['id'];
@@ -240,7 +258,7 @@
         });
     </script>
     <!-- End Scripts -->
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

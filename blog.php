@@ -22,34 +22,37 @@
     </header>
 
     <section class="blog-articles">
+        <div class="blog-wrapper">
 
-        <?php
-        include('connection.php');
-        $sql = "SELECT * FROM blog ORDER BY id DESC";
-        $query = mysqli_query($connect, $sql);
-        if (mysqli_num_rows($query) > 0) {
-            while ($row = mysqli_fetch_array($query)) {
-                $id = $row['id'];
-                $title = $row['title'];
-                $content = $row['content'];
-                $pic = base64_encode($row['pic']);
-                echo '
-            <div class="article">
+            <?php
+            include('connection.php');
+            $sql = "SELECT * FROM blog ORDER BY id DESC";
+            $query = mysqli_query($connect, $sql);
+            if (mysqli_num_rows($query) > 0) {
+                while ($row = mysqli_fetch_array($query)) {
+                    $id = $row['id'];
+                    $title = $row['title'];
+                    $content = $row['content'];
+                    $pic = base64_encode($row['pic']);
+                    echo '
+                <div class="article">
             <a href="article.php?article=' . $id . '" style="color: black;text-decoration:none">
-                <div class="article-img">
-                    <img src="data:image/png;base64,' . $pic . '" alt="'.$title.'">
-                </div>
-                <div class="article-content">
+            <div class="article-img">
+                    <img src="data:image/png;base64,' . $pic . '" alt="' . $title . '">
+                    </div>
+                    <div class="article-content">
                     <h1 class="article-title">' . $title . '</h1>
                     <p class="article-desc">' . $content . '</p>
                 </div>
-            </a>
-            </div>
-            ';
+                </a>
+                </div>
+                ';
+                
+                }
             }
-        }
-        ?>
+            ?>
 
+        </div>
     </section>
 
 

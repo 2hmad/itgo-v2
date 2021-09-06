@@ -2,32 +2,12 @@
   --green: #05f;
 }
 
-@font-face {
-  font-family: Almarai-Regular;
-  src: url("../css/Almarai-Regular.ttf");
-}
-
-@font-face {
-  font-family: Almarai-Bold;
-  src: url("../css/Almarai-Bold.ttf");
-}
-
-@font-face {
-  font-family: Almarai-Extrabold;
-  src: url("../css/Almarai-ExtraBold.ttf");
-}
-
-@font-face {
-  font-family: Almarai-light;
-  src: url("../css/Almarai-Light.ttf");
-}
-
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Almarai-Regular', sans-serif;
+  font-family: "Almarai", sans-serif;
 }
 
 body {
@@ -41,8 +21,82 @@ body {
           flex-direction: column;
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.sidebar.opened {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+}
+
+.sidebar .close {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sidebar .close:active {
+  opacity: 0.5;
+}
+
+.sidebar .close i {
+  font-size: 24px;
+}
+
+.sidebar .links {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar .links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .header {
   height: 830px;
+  position: relative;
+}
+
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9000;
 }
 
 .slick-slide {
@@ -82,7 +136,7 @@ nav {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   padding-bottom: 1%;
-  z-index: 9999999;
+  z-index: 9001;
 }
 
 nav .logo img {
@@ -102,11 +156,50 @@ nav a:hover {
   transition: 0.6s;
 }
 
+nav .menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  display: none;
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+nav .menu:active {
+  opacity: 0.5;
+}
+
+nav .menu i {
+  color: #fff;
+  font-size: 24px;
+}
+
 nav .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 35px;
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  nav .nav-links {
+    display: none;
+  }
 }
 
 .navbar-fixed-top.scrolled {
@@ -116,8 +209,14 @@ nav .nav-links {
   position: fixed;
   top: 0;
   max-width: 100%;
-  padding: 10px 100px 10px 100px;
+  padding: 32px;
   border: none;
+}
+
+@media (max-width: 992px) {
+  .navbar-fixed-top.scrolled {
+    padding: 16px;
+  }
 }
 
 .home-second {
@@ -139,14 +238,13 @@ nav .nav-links {
 }
 
 .home-second .text h2 {
-  color: #7A7A7A;
+  color: #7a7a7a;
   font-weight: 600;
   font-size: 16px;
 }
 
 .home-second .text h1 {
   color: #000;
-  font-family: almarai, Sans-serif;
   font-size: 30px;
   font-weight: 600;
   line-height: 1.4em;
@@ -227,7 +325,7 @@ nav .nav-links {
   box-shadow: 4px 4px 20px 1px #e8e8e8;
   position: relative;
   max-width: 600px;
-  z-index: 999999;
+  z-index: 9000;
   bottom: -80px;
   right: 15%;
   background: white;
@@ -353,9 +451,12 @@ nav .nav-links {
   margin-bottom: 32px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  -ms-grid-columns: (minmax(280px, 360px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
   gap: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #work .section-content .project {
@@ -1004,31 +1105,39 @@ div.contact-form .left-sec div {
 }
 
 section.blog-articles {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  max-width: 1200px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   direction: rtl;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 50px;
+  padding: 64px 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-section.blog-articles .article {
-  max-width: 300px;
+section.blog-articles .blog-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(auto, 360px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(auto, 360px));
+  max-width: 1200px;
+  gap: 32px;
 }
 
 section.blog-articles .article .article-img {
-  max-width: 300px;
-  height: 200px;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
 section.blog-articles .article .article-img img {
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1040,7 +1149,6 @@ section.blog-articles .article .article-content {
 
 section.blog-articles .article .article-content .article-desc {
   line-height: 1.5em;
-  height: 3em;
   width: 100%;
   white-space: normal;
   overflow: hidden;
