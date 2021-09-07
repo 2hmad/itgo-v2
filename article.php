@@ -56,7 +56,7 @@ if (isset($_GET['article'])) {
 
     <section class="article-page">
         <div class="article-pic">
-            <?php echo "<img src=data:image/png;base64,' . $pic . '>" ?>
+            <?php echo '<img src="data:image/png;base64,' . $pic . '">' ?>
         </div>
         <div class="article-content">
             <h1><?php echo "$title"; ?></h1>
