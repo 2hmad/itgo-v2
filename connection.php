@@ -6,4 +6,6 @@ $pass = "98f53217";
 $db = "heroku_de779d0e3559015";
 
 $connect = mysqli_connect($host, $user, $pass, $db);
+$connect -> set_charset("utf8");
+
 ?>
