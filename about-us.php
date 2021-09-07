@@ -34,7 +34,7 @@
             <img src="images/employees/ahmed.jpg" alt="احمد محمد ابراهيم - Ahmed Mohamed Ibrahim">
             <h2 style="font-size: 16px;">احمد محمد ابراهيم</h2>
             <div style="border-bottom: 4px solid orange;width: 55px;margin-top: 3%;margin-right: auto;margin-left: auto;"></div>
-            <p style="font-size: 13px;line-height: 1.7em;font-weight: 400;margin-top: 5%;color: #717171;">
+            <p style="font-size: 14px;line-height: 1.8em;font-weight: 400;margin-top: 5%;color: #717171;">
                 مسئول عن تطوير الجزء الخاص بالـ Back-end في المواقع والتطبيقات المبنية علي التقنيات وخبير في التعامل مع معظم قواعد البيانات الموجودة والمسئول عن سد الثغرات في الجزء الخاص بالباك اند
             </p>
         </div>
@@ -42,15 +42,15 @@
             <img src="images/employees/bassem.png" alt="باسم طارق محروس - Bassem Tarek Mahrous">
             <h2 style="font-size: 16px;">باسم طارق محروس</h2>
             <div style="border-bottom: 4px solid orange;width: 55px;margin-top: 3%;margin-right: auto;margin-left: auto;"></div>
-            <p style="font-size: 13px;line-height: 1.7em;font-weight: 400;margin-top: 5%;color: #717171;">
+            <p style="font-size: 14px;line-height: 1.8em;font-weight: 400;margin-top: 5%;color: #717171;">
                 مسئول عن تصميم وتطوير تطبيقات الاندرويد والـ IOS بأستخدام Flutter ويقوم ببناء تطبيقات تعمل علي النظامين
             </p>
         </div>
         <div class="employee-card">
-            <img src="images/employees/yousef.jfif" alt="يوسف مجدي الجوهري - Yousef Magdy Elgohary">
+            <img src="images/employees/yousef.jpg" alt="يوسف مجدي الجوهري - Yousef Magdy Elgohary">
             <h2 style="font-size: 16px;">يوسف مجدي الجوهري</h2>
             <div style="border-bottom: 4px solid orange;width: 55px;margin-top: 3%;margin-right: auto;margin-left: auto;"></div>
-            <p style="font-size: 13px;line-height: 1.7em;font-weight: 400;margin-top: 5%;color: #717171;">
+            <p style="font-size: 14px;line-height: 1.8em;font-weight: 400;margin-top: 5%;color: #717171;">
                 المسئول عن تطوير الجزء المتعلق بواجهة المستخدم Front-end وتنسيق الالوان في الموقع عن طريق استخدام React.js وبرمجة التطبيقات بأستخدام React Native
             </p>
         </div>
