@@ -58,7 +58,7 @@
         <div class="slick">
             <?php
             include 'connection.php';
-            $sql = "SELECT * FROM portfolio ORDER BY id DESC LIMIT 4";
+            $sql = "SELECT * FROM portfolio ORDER BY rand() DESC LIMIT 4";
             $query = mysqli_query($connect, $sql);
             while ($row = mysqli_fetch_array($query)) {
                 $title = $row['title'];
