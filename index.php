@@ -25,6 +25,7 @@
     <meta name="twitter:image" content="https://itgo-solutions.com/itgo120.jpg">
 
     <!-- Open Graph data -->
+    <meta property="fb:app_id" content="966242223397117">
     <meta property="og:title" content="شركة أي تي جو للحلول المتكاملة" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://itgo-solutions.com" />
