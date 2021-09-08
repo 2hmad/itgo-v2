@@ -19,7 +19,7 @@
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://itgo-solutions.com">
-    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:title" content="شركة أي تي جو للحلول المتكاملة">
     <meta name="twitter:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة">
     <meta name="twitter:creator" content="ITGO">
     <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
