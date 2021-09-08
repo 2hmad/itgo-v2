@@ -110,7 +110,7 @@ body {
      object-fit: cover;
 }
 
-nav {
+nav.navbar-fixed-top {
   max-width: 950px;
   position: absolute;
   z-index: 999;
@@ -139,24 +139,24 @@ nav {
   z-index: 9001;
 }
 
-nav .logo img {
+nav.navbar-fixed-top .logo img {
   width: 75px;
 }
 
-nav a {
+nav.navbar-fixed-top a {
   color: #e8e7dd;
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
 }
 
-nav a:hover {
+nav.navbar-fixed-top a:hover {
   color: white;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
-nav .menu {
+nav.navbar-fixed-top .menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -173,23 +173,23 @@ nav .menu {
 }
 
 @media (min-width: 0) and (max-width: 992px) {
-  nav .menu {
+  nav.navbar-fixed-top .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-nav .menu:active {
+nav.navbar-fixed-top .menu:active {
   opacity: 0.5;
 }
 
-nav .menu i {
+nav.navbar-fixed-top .menu i {
   color: #fff;
   font-size: 24px;
 }
 
-nav .nav-links {
+nav.navbar-fixed-top .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +197,7 @@ nav .nav-links {
 }
 
 @media (min-width: 0) and (max-width: 992px) {
-  nav .nav-links {
+  nav.navbar-fixed-top .nav-links {
     display: none;
   }
 }
@@ -1285,5 +1285,9 @@ section.prog-languages .prog-lang img {
   border-radius: 5px;
   border: none;
   font-weight: bold;
+}
+
+.navbar-brand img {
+  max-width: 95px;
 }
 /*# sourceMappingURL=main.css.map */
