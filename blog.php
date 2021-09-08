@@ -11,6 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <meta name="description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك">
+    <meta name="robots" content="index, follow">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://itgo-solutions.com/blog.php">
+    <meta name="twitter:title" content="المدونة - أي تي جو للحلول المتكاملة">
+    <meta name="twitter:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة">
+    <meta name="twitter:creator" content="ITGO">
+    <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="966242223397117">
+    <meta property="og:title" content="المدونة - أي تي جو للحلول المتكاملة" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itgo-solutions.com/blog.php" />
+    <meta property="og:image" content="https://itgo-solutions.com/images/itgo.jpg" />
+    <meta property="og:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة" />
+    <meta property="og:site_name" content="ITGO - أي تي جو" />
+
 </head>
 
 <body>
