@@ -14,20 +14,21 @@
 
     <?php include('navbar.php') ?>
     <div class="wrapper" style="max-width: 1200px;margin-left: auto;margin-right: auto;text-align: right;margin-top: 5%;">
-        <h4 style="text-align: center;">اضافة مشروع</h4>
+        <h4 style="text-align: center;">اضافة عميل</h4>
         <div style="max-width: 1200px;margin-left: auto;margin-right: auto;text-align: right;display: flex;gap: 30px;margin-top: 5%;">
             <form method="POST" enctype="multipart/form-data" style="display: flex;flex-direction: column;gap: 30px;direction: rtl;width: 450px;">
-                <input type="text" name="title" placeholder="اسم المشروع" style="padding: 10px;border: 1px solid #CCC;border-radius: 5px;outline: none;" required>
-                <textarea name="details" placeholder="تفاصيل المشروع" style="height: 150px;padding: 10px;border: 1px solid #CCC;border-radius: 5px;outline: none;" required></textarea>
-                <input type="submit" name="add" value="اضافة المشروع" style="padding: 10px;background: #000077;color: white;border: none;border-radius: 5px;">
+                <input type="text" name="name" placeholder="اسم العميل" style="padding: 10px;border: 1px solid #CCC;border-radius: 5px;outline: none;" required>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">شعار العميل</label>
+                    <input class="form-control" type="file" name="logo" id="formFile">
+                </div>
+                <input type="submit" name="add" value="اضافة العميل" style="padding: 10px;background: #000077;color: white;border: none;border-radius: 5px;">
             </form>
             <?php
             if (isset($_POST['add'])) {
-                $title = $_POST['title'];
-                $details = $_POST['details'];
-                $date = date('Y-m-d');
-                $sql = "INSERT INTO portfolio (title, details, date) 
-                VALUES ('$title', '$details', '$date')";
+                $name = $_POST['name'];
+                $logo = base64_encode(file_get_contents($_FILES['logo']['tmp_name']));
+                $sql = "INSERT INTO clients (name, logo) VALUES ('$name', '$logo')";
                 $query = mysqli_query($connect, $sql);
                 if ($query) {
                     echo '
@@ -35,7 +36,7 @@
                     function swal() {
                         swal({
                             icon: "success",
-                            text: "تم اضافة المشروع بنجاح"
+                            text: "تم اضافة العميل بنجاح"
                         });
                     }
                     window.onload = swal;

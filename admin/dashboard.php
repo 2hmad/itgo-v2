@@ -20,7 +20,6 @@
                     <h5 class="card-title">عدد الاعمال المضافة</h5>
                     <h6 class="card-subtitle mb-2 text-muted">
                         <?php
-                        include '../connection.php';
                         $sql = "SELECT COUNT(*) AS total FROM portfolio";
                         $query = mysqli_query($connect, $sql);
                         $data = mysqli_fetch_assoc($query);
@@ -34,7 +33,6 @@
                     <h5 class="card-title">عدد العملاء</h5>
                     <h6 class="card-subtitle mb-2 text-muted">
                         <?php
-                        include '../connection.php';
                         $sql = "SELECT COUNT(*) AS total FROM clients";
                         $query = mysqli_query($connect, $sql);
                         $data = mysqli_fetch_assoc($query);
@@ -48,7 +46,6 @@
                     <h5 class="card-title">عدد المقالات</h5>
                     <h6 class="card-subtitle mb-2 text-muted">
                         <?php
-                        include '../connection.php';
                         $sql = "SELECT COUNT(*) AS total FROM blog";
                         $query = mysqli_query($connect, $sql);
                         $data = mysqli_fetch_assoc($query);

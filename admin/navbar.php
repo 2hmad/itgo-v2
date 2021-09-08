@@ -1,3 +1,12 @@
+<?php
+include '../connection.php';
+session_start();
+if(!isset($_SESSION['token'])) {
+    header('Location: index.php');
+    exit;
+}
+?>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="dashboard.php"><img src="../images/itgo-white.png"></a>
