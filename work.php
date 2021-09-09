@@ -8,6 +8,7 @@ if (isset($_GET['id'])) {
         while ($row = mysqli_fetch_array($query)) {
             $title = $row['title'];
             $details = $row['details'];
+            $preview = $row['preview'];
         }
     } else {
         echo '
@@ -243,6 +244,7 @@ if (isset($_GET['id'])) {
                 <h1><?php echo "$title"; ?></h1>
                 <p><?php echo "$details"; ?></p>
             </div>
+            <a href="<?php echo "$preview" ?>"><button class="live-preview">معاينة المشروع</button></a>
         </section>
 
     </main>
