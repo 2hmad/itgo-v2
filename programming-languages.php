@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أي تي جو للحلول الرقمية</title>
+    <title>لغات البرمجة المستخدمة - أي تي جو للحلول المتكاملة</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 
     <section class="prog-languages">
 
-        <div class="lang-card" >
+        <div class="lang-card">
             <div class="prog-lang"><img src="images/programming-languages/flutter.jpeg" alt="فلاتر - Flutter"></div>
             <h1 style="padding:10px">برمجة التطبيقات بواسطة فلاتر</h1>
             <p style="padding:10px">
@@ -31,7 +31,7 @@
             </p>
         </div>
 
-        <div class="lang-card" >
+        <div class="lang-card">
             <div class="prog-lang"><img src="images/programming-languages/logo-laravel.webp" alt="بي اتش بي - Laravel"></div>
             <h1 style="padding:10px">لغة بي اتش بي واطار العمل لارافيل</h1>
             <p style="padding:10px">
@@ -39,7 +39,7 @@
             </p>
         </div>
 
-        <div class="lang-card" >
+        <div class="lang-card">
             <div class="prog-lang"><img src="images/programming-languages/react.png" alt="رياكت - React"></div>
             <h1 style="padding:10px">اطار عمل الواجهة الامامية React</h1>
             <p style="padding:10px">
@@ -47,7 +47,7 @@
             </p>
         </div>
 
-        <div class="lang-card" >
+        <div class="lang-card">
             <div class="prog-lang"><img src="images/programming-languages/mysql.png" alt="mysql - mongodb" style="object-fit: contain;"></div>
             <h1 style="padding:10px">قواعد البيانات MYSQL و MongoDB</h1>
             <p style="padding:10px">
@@ -55,8 +55,8 @@
             </p>
         </div>
 
-        <div class="lang-card" >
-            <div class="prog-lang"><img src="images/programming-languages/firebase.png" alt="Firebase" ></div>
+        <div class="lang-card">
+            <div class="prog-lang"><img src="images/programming-languages/firebase.png" alt="Firebase"></div>
             <h1 style="padding:10px">قاعدة البيانات Firebase</h1>
             <p style="padding:10px">
                 نتعامل مع فاير بيز لسهولة التحكم اذا تريد لوحة تحكم crm كاملة مثلها للتحكم في موقعك الالكتروني او تطبيقك بشكل كامل ونتعامل مع كافة خصائص الفايربيز مثل الـ Real-time

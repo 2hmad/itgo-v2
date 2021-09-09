@@ -5,12 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أي تي جو للحلول الرقمية</title>
+    <title>سابق اعمالنا - أي تي جو للحلول المتكاملة</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك">
+    <meta name="robots" content="index, follow">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://itgo-solutions.com/portfolio.php">
+    <meta name="twitter:title" content="سابق اعمالنا - أي تي جو للحلول المتكاملة">
+    <meta name="twitter:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة">
+    <meta name="twitter:creator" content="ITGO">
+    <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="966242223397117">
+    <meta property="og:title" content="سابق اعمالنا - أي تي جو للحلول المتكاملة" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itgo-solutions.com/portfolio.php" />
+    <meta property="og:image" content="https://itgo-solutions.com/images/itgo.jpg" />
+    <meta property="og:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة" />
+    <meta property="og:site_name" content="ITGO - أي تي جو" />
+
 </head>
 
 <body>
@@ -36,12 +55,12 @@
             echo '
             <div class="work">
             <div class="wg-box-content">
-                <a href="work.php?id='.$id.'">
+                <a href="work.php?id=' . $id . '">
                     <div class="wg-box-content-overlay"></div>
                     <img class="wg-box-content-image" src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '">
                     <div class="wg-box-content-details wg-box-fadeIn-bottom">
-                        <h3 class="wg-box-content-title">'.$title.'</h3>
-                        <p class="wg-box-content-text">'.$details.'</p>
+                        <h3 class="wg-box-content-title">' . $title . '</h3>
+                        <p class="wg-box-content-text">' . $details . '</p>
                     </div>
                 </a>
             </div>

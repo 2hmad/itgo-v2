@@ -5,14 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أي تي جو للحلول الرقمية</title>
+    <title>أي تي جو للحلول المتكاملة</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="sass/main.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك">
+    <meta name="robots" content="index, follow">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://itgo-solutions.com">
+    <meta name="twitter:title" content="شركة أي تي جو للحلول المتكاملة">
+    <meta name="twitter:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة">
+    <meta name="twitter:creator" content="ITGO">
+    <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="966242223397117">
+    <meta property="og:title" content="شركة أي تي جو للحلول المتكاملة" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itgo-solutions.com" />
+    <meta property="og:image" content="https://itgo-solutions.com/images/itgo.jpg" />
+    <meta property="og:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة" />
+    <meta property="og:site_name" content="ITGO - أي تي جو" />
+
 
 </head>
 
@@ -20,25 +40,25 @@
 
     <div class="sidebar">
         <div class="close">
-        <i class="fal fa-times-circle"></i>
+            <i class="fal fa-times-circle"></i>
         </div>
         <div class="links">
-        <a href="index.php">الرئيسية</a>
-        <a href="about-us.php">تعرف علينا</a>
-        <a href="portfolio.php">اعمالنا</a>
-        <a href="blog.php">المدونة</a>
-        <a href="contact-us.php">اتصل بنا</a>
+            <a href="index.php">الرئيسية</a>
+            <a href="about-us.php">تعرف علينا</a>
+            <a href="portfolio.php">اعمالنا</a>
+            <a href="blog.php">المدونة</a>
+            <a href="contact-us.php">اتصل بنا</a>
         </div>
     </div>
     <?php include('navbar.php') ?>
     <header class="header">
         <div class="overlay">
 
-            </div>
-            <div class="slick">
-                <?php
+        </div>
+        <div class="slick">
+            <?php
             include 'connection.php';
-            $sql = "SELECT * FROM portfolio ORDER BY id DESC LIMIT 4";
+            $sql = "SELECT * FROM portfolio ORDER BY rand() DESC LIMIT 4";
             $query = mysqli_query($connect, $sql);
             while ($row = mysqli_fetch_array($query)) {
                 $title = $row['title'];
@@ -133,7 +153,7 @@
                     $title = $row['title'];
                     $pic_one = base64_encode($row['pic_one']);
                     echo '
-                    <a href="work.php?id='.$id.'" class="project">
+                    <a href="work.php?id=' . $id . '" class="project">
                     <img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: cover;height: 100%;">
                     </a>
                     ';

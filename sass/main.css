@@ -110,7 +110,7 @@ body {
      object-fit: cover;
 }
 
-nav {
+nav.navbar-fixed-top {
   max-width: 950px;
   position: absolute;
   z-index: 999;
@@ -139,24 +139,24 @@ nav {
   z-index: 9001;
 }
 
-nav .logo img {
+nav.navbar-fixed-top .logo img {
   width: 75px;
 }
 
-nav a {
+nav.navbar-fixed-top a {
   color: #e8e7dd;
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
 }
 
-nav a:hover {
+nav.navbar-fixed-top a:hover {
   color: white;
   -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
-nav .menu {
+nav.navbar-fixed-top .menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -173,23 +173,23 @@ nav .menu {
 }
 
 @media (min-width: 0) and (max-width: 992px) {
-  nav .menu {
+  nav.navbar-fixed-top .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 }
 
-nav .menu:active {
+nav.navbar-fixed-top .menu:active {
   opacity: 0.5;
 }
 
-nav .menu i {
+nav.navbar-fixed-top .menu i {
   color: #fff;
   font-size: 24px;
 }
 
-nav .nav-links {
+nav.navbar-fixed-top .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,7 +197,7 @@ nav .nav-links {
 }
 
 @media (min-width: 0) and (max-width: 992px) {
-  nav .nav-links {
+  nav.navbar-fixed-top .nav-links {
     display: none;
   }
 }
@@ -777,7 +777,9 @@ main.preview-works {
 }
 
 main.preview-works .work-details {
-  max-width: 1200px;
+  max-width: 777px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main.preview-works .work-details .container {
@@ -1008,6 +1010,22 @@ main.preview-works section.follow-work {
   direction: rtl;
 }
 
+.live-preview {
+  padding: 10px;
+  background: #363839;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  max-width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
 div.contact-form {
   max-width: 1000px;
   width: 100%;
@@ -1226,5 +1244,68 @@ section.prog-languages .prog-lang img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.container-admin-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  direction: rtl;
+}
+
+.container-admin-login h1 {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 23px;
+}
+
+.container-admin-login .login-form {
+  border: 1px solid #CCC;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.container-admin-login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-admin-login form input[name="email"],
+.container-admin-login form input[name="password"] {
+  padding: 10px;
+  width: 350px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  outline: none;
+}
+
+.container-admin-login form input[name="login"] {
+  padding: 15px;
+  width: 180px;
+  background: #000096;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.navbar-brand img {
+  max-width: 95px;
 }
 /*# sourceMappingURL=main.css.map */

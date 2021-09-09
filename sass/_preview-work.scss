@@ -3,7 +3,9 @@
         margin-top: 5%;
 
         .work-details {
-            max-width: 1200px;
+            max-width: 777px;
+            margin-left: auto;
+            margin-right: auto;
             .container {
                 max-width: 770px;
                 margin-top: 5%;
@@ -231,4 +233,19 @@
             direction: rtl;
         }
 
+    }
+    .live-preview {
+        padding: 10px;
+        background: #363839;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        width: 150px;
+        max-width: 150px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        margin-top: 5%;
+        cursor: pointer;
     }

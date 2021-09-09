@@ -1,3 +1,33 @@
+<?php
+include 'connection.php';
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM portfolio WHERE id = '$id'";
+    $query = mysqli_query($connect, $sql);
+    if (mysqli_num_rows($query) > 0) {
+        while ($row = mysqli_fetch_array($query)) {
+            $title = $row['title'];
+            $details = $row['details'];
+            $preview = $row['preview'];
+        }
+    } else {
+        echo '
+                <script>
+                alert("عنوان URL خاطئ");
+                window.location.href="portfolio.php";
+                </script>
+                ';
+    }
+} else {
+    echo '
+            <script>
+            alert("عنوان URL خاطئ");
+            window.location.href="portfolio.php";
+            </script>
+            ';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +35,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أي تي جو للحلول الرقمية</title>
+    <title><?php echo "$title" ?> - أي تي جو للحلول المتكاملة</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet"> <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css">
 
 
@@ -21,34 +50,6 @@
 
     <header class="header-about">
         <?php include('navbar.php') ?>
-        <?php
-        include 'connection.php';
-        if (isset($_GET['id'])) {
-            $id = $_GET['id'];
-            $sql = "SELECT * FROM portfolio WHERE id = '$id'";
-            $query = mysqli_query($connect, $sql);
-            if (mysqli_num_rows($query) > 0) {
-                while ($row = mysqli_fetch_array($query)) {
-                    $title = $row['title'];
-                    $details = $row['details'];
-                }
-            } else {
-                echo '
-                <script>
-                alert("عنوان URL خاطئ");
-                window.location.href="portfolio.php";
-                </script>
-                ';
-            }
-        } else {
-            echo '
-            <script>
-            alert("عنوان URL خاطئ");
-            window.location.href="portfolio.php";
-            </script>
-            ';
-        }
-        ?>
         <h1>مشروع : <?php echo "$title"; ?></h1>
         <div style="border-bottom: 5px solid orange;width: 55px;margin-top: 0.5%;"></div>
     </header>
@@ -71,70 +72,70 @@
                                 $pic_three = base64_encode($row['pic_three']);
                                 $pic_four = base64_encode($row['pic_four']);
                                 $pic_five = base64_encode($row['pic_five']);
-                                if ($pic_two !== "") {
+                                if ($pic_two !== "" && $pic_three == "" && $pic_four == "" && $pic_five == "") {
                                     echo '
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-                                    ';
-                                } elseif ($pic_three !== "") {
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+                                        ';
+                                } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four == "" && $pic_five == "") {
                                     echo '
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-                                    ';
-                                } elseif ($pic_four !== "") {
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+                                        ';
+                                } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four !== "" && $pic_five == "") {
                                     echo '
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_four . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-                                    ';
-                                } elseif ($pic_five !== "") {
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+                                        ';
+                                } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four !== "" && $pic_five !== "") {
                                     echo '
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_four . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-    
-                                    <div class="item">
-                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_five . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                    </div>
-                                    ';
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+        
+                                        <div class="item">
+                                            <div class="img-fill"><img src="data:image/png;base64,' . $pic_five . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        </div>
+                                        ';
                                 }
                             }
                             ?>
@@ -156,70 +157,70 @@
                     <div class="gallery-slider__thumbnails">
                         <div>
                             <?php
-                            if ($pic_two !== "") {
+                            if ($pic_two !== "" && $pic_three == "" && $pic_four == "" && $pic_five == "") {
                                 echo '
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-                                ';
-                            } elseif ($pic_three !== "") {
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+                                    ';
+                            } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four == "" && $pic_five == "") {
                                 echo '
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-                                ';
-                            } elseif ($pic_four !== "") {
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+                                    ';
+                            } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four !== "" && $pic_five == "") {
                                 echo '
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_four . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-                                ';
-                            } elseif ($pic_five !== "") {
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+                                    ';
+                            } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four !== "" && $pic_five !== "") {
                                 echo '
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_four . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-
-                                <div class="item">
-                                    <div class="img-fill"><img src="data:image/png;base64,' . $pic_five . '" alt="' . $title . '" alt="Kitten 1"></div>
-                                </div>
-                                ';
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+    
+                                    <div class="item">
+                                        <div class="img-fill"><img src="data:image/png;base64,' . $pic_five . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                    </div>
+                                    ';
                             }
                             ?>
                         </div>
@@ -242,6 +243,7 @@
                 <h1><?php echo "$title"; ?></h1>
                 <p><?php echo "$details"; ?></p>
             </div>
+            <a href="<?php echo "$preview" ?>"><button class="live-preview">معاينة المشروع</button></a>
         </section>
 
     </main>
@@ -267,6 +269,7 @@
             $thumbnailsSlider = $(".gallery-slider__thumbnails>div");
         $imagesSlider.slick({
             speed: 300,
+            infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             cssEase: 'linear',
