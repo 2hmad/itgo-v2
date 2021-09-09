@@ -777,7 +777,9 @@ main.preview-works {
 }
 
 main.preview-works .work-details {
-  max-width: 1200px;
+  max-width: 777px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 main.preview-works .work-details .container {
