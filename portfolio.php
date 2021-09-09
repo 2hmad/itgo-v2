@@ -57,7 +57,7 @@
 
         <?php
         include 'connection.php';
-        $sql = "SELECT * FROM portfolio ORDER BY id DESC";
+        $sql = "SELECT * FROM portfolio ORDER BY rand()";
         $query = mysqli_query($connect, $sql);
         while ($row = mysqli_fetch_array($query)) {
             $id = $row['id'];
@@ -70,7 +70,7 @@
                 <a href="work.php?id=' . $id . '">
                     <div class="wg-box-content-overlay"></div>
                     <img class="wg-box-content-image lozad" data-src="images/portfolio/' . $pic_one . '" alt="' . $title . '">
-                    <div class="wg-box-content-details wg-box-fadeIn-bottom">
+                    <div class="wg-box-content-details wg-box-fadeIn-bottom" style="direction: rtl;">
                         <h3 class="wg-box-content-title">' . $title . '</h3>
                         <p class="wg-box-content-text">' . $details . '</p>
                     </div>

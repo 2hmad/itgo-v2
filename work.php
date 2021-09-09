@@ -243,7 +243,7 @@ if (isset($_GET['id'])) {
                 <h1><?php echo "$title"; ?></h1>
                 <p><?php echo "$details"; ?></p>
             </div>
-            <a href="<?php echo "$preview" ?>"><button class="live-preview">معاينة المشروع</button></a>
+            <a href="<?php echo "$preview" ?>" style="text-decoration: none;"><button class="live-preview">معاينة المشروع</button></a>
         </section>
 
     </main>
