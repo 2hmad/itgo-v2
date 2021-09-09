@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
-    <meta name="description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك">
+    <meta name="description" content="شركة تصميم تطبيقات مصر - شركة برمجة وتصميم تطبيقات جوال في مصر - شركة إنشاء و برمجة و تصميم مواقع إلكترونية مصر-شركة تقنية معلومات.">
     <meta name="robots" content="index, follow">
 
     <!-- Twitter Card data -->
