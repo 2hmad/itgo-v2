@@ -30,6 +30,18 @@
     <meta property="og:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة" />
     <meta property="og:site_name" content="ITGO - أي تي جو" />
 
+    <style>
+        .wg-box-content-text {
+            color: #fff;
+            font-size: 0.8em;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 2em;
+        }
+    </style>
 </head>
 
 <body>
