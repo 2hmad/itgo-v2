@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
     <meta name="description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك">
     <meta name="robots" content="index, follow">
     <!-- Twitter Card data -->
@@ -56,12 +55,12 @@
             echo '
             <div class="work">
             <div class="wg-box-content">
-                <a href="work.php?id='.$id.'">
+                <a href="work.php?id=' . $id . '">
                     <div class="wg-box-content-overlay"></div>
                     <img class="wg-box-content-image" src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '">
                     <div class="wg-box-content-details wg-box-fadeIn-bottom">
-                        <h3 class="wg-box-content-title">'.$title.'</h3>
-                        <p class="wg-box-content-text">'.$details.'</p>
+                        <h3 class="wg-box-content-title">' . $title . '</h3>
+                        <p class="wg-box-content-text">' . $details . '</p>
                     </div>
                 </a>
             </div>
