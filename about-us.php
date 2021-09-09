@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عن شركة أي تي جو للحلول المتكاملة</title>
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/itgo32.jpg" sizes="32x32">
+    <link rel="icon" href="images/itgo192.png" sizes="192x192">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

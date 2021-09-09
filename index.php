@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أي تي جو للحلول المتكاملة</title>
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/itgo32.jpg" sizes="32x32">
+    <link rel="icon" href="images/itgo192.png" sizes="192x192">
+    
     <link rel="stylesheet" href="sass/main.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css">
