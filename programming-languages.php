@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>لغات البرمجة المستخدمة - أي تي جو للحلول المتكاملة</title>
+    <title>لغات البرمجة المستخدمة - أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات</title>
     <link rel="icon" href="images/favicon.png" sizes="32x32">
 <link rel="icon" href="images/favicon.png" sizes="192x192">
     <link rel="stylesheet" href="sass/main.css">

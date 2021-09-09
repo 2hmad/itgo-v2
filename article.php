@@ -34,7 +34,7 @@ if (isset($_GET['article'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo "$title" ?> - أي تي جو للحلول المتكاملة</title>
+    <title><?php echo "$title" ?> - أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات</title>
     <link rel="icon" href="images/itgo32.jpg" sizes="32x32">
     <link rel="icon" href="images/itgo192.png" sizes="192x192">
     <link rel="stylesheet" href="sass/main.css">

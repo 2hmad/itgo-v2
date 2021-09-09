@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عن شركة أي تي جو للحلول المتكاملة</title>
+    <title>عن شركة أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات</title>
     <link rel="icon" href="images/itgo32.jpg" sizes="32x32">
     <link rel="icon" href="images/itgo192.png" sizes="192x192">
     <link rel="stylesheet" href="sass/main.css">
@@ -17,14 +17,14 @@
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://itgo-solutions.com/about-us.php">
-    <meta name="twitter:title" content="عن شركة أي تي جو للحلول المتكاملة">
+    <meta name="twitter:title" content="عن شركة أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات">
     <meta name="twitter:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة">
     <meta name="twitter:creator" content="ITGO">
     <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
 
     <!-- Open Graph data -->
     <meta property="fb:app_id" content="966242223397117">
-    <meta property="og:title" content="عن شركة أي تي جو للحلول المتكاملة" />
+    <meta property="og:title" content="عن شركة أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://itgo-solutions.com/about-us.php" />
     <meta property="og:image" content="https://itgo-solutions.com/images/itgo.jpg" />
@@ -37,7 +37,7 @@
 
     <header class="header-about">
         <?php include('navbar.php') ?>
-        <h1>عن شركة أي تي جو للحلول المتكاملة</h1>
+        <h1>عن شركة أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات</h1>
         <div style="border-bottom: 5px solid orange;width: 55px;margin-top: 0.5%;"></div>
     </header>
 
