@@ -763,7 +763,7 @@ section.portfolio .work .wg-box-content:hover .wg-box-content-details {
 section.portfolio .work .wg-box-content-details h3 {
   color: #fff;
   font-weight: 500;
-  letter-spacing: 0;
+  letter-spacing: 0.15em;
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
@@ -1239,6 +1239,13 @@ section.prog-languages .lang-card:hover {
   border-radius: 10px 10px 10px 10px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+}
+
+@media (max-width: 568px) {
+  section.prog-languages .lang-card:hover {
+    -webkit-transform: scale(1.001);
+            transform: scale(1.001);
+  }
 }
 
 section.prog-languages .prog-lang {
