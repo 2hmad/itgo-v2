@@ -90,6 +90,8 @@
             });
         });
     </script>
+    <script src="./js/main.js"></script>
+
     <!-- End Scripts -->
 
 </body>

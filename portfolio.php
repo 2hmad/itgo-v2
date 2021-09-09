@@ -51,13 +51,13 @@
             $id = $row['id'];
             $title = $row['title'];
             $details = $row['details'];
-            $pic_one = base64_encode($row['pic_one']);
+            $pic_one = $row['pic_one'];
             echo '
             <div class="work">
             <div class="wg-box-content">
                 <a href="work.php?id=' . $id . '">
                     <div class="wg-box-content-overlay"></div>
-                    <img class="wg-box-content-image" src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '">
+                    <img class="wg-box-content-image lozad" data-src="images/portfolio/' . $pic_one . '" alt="' . $title . '">
                     <div class="wg-box-content-details wg-box-fadeIn-bottom">
                         <h3 class="wg-box-content-title">' . $title . '</h3>
                         <p class="wg-box-content-text">' . $details . '</p>
@@ -85,6 +85,9 @@
             });
         });
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script src="./js/main.js"></script>
+
     <!-- End Scripts -->
 
 </body>

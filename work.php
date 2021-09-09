@@ -333,6 +333,8 @@ if (isset($_GET['id'])) {
             $caption.removeClass('hide');
         }
     </script>
+    <script src="./js/main.js"></script>
+
     <!-- End Scripts -->
 
 </body>

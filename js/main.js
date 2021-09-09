@@ -13,3 +13,5 @@ close.addEventListener("click", function() {
     body.style,overflow = "auto"
     sidebar.classList.remove("opened");
 })
+const observer = lozad();
+observer.observe();

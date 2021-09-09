@@ -62,8 +62,8 @@
             $query = mysqli_query($connect, $sql);
             while ($row = mysqli_fetch_array($query)) {
                 $title = $row['title'];
-                $pic_one = base64_encode($row['pic_one']);
-                echo '<div><img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '"></div>';
+                $pic_one = $row['pic_one'];
+                echo '<div><img class="lozad" data-src="images/portfolio/' . $pic_one . '" alt="' . $title . '"></div>';
             }
             ?>
         </div>
@@ -109,7 +109,7 @@
 
     <div class="home-three">
         <div class="bot-cont">
-            <img src="images/how-to-find-the-best-app-dev-company-for-you-min.jpg" style="width: 100%;">
+            <img class="lozad" data-src="images/how-to-find-the-best-app-dev-company-for-you-min.jpg" style="width: 100%;">
         </div>
 
         <div class="zindex-cont">
@@ -132,8 +132,8 @@
                 $query = mysqli_query($connect, $sql);
                 while ($row = mysqli_fetch_array($query)) {
                     $name = $row['name'];
-                    $logo = base64_encode($row['logo']);
-                    echo '<div><img src="data:image/png;base64,' . $logo . '" alt="' . $name . '" style="object-fit: contain;"></div>';
+                    $logo = $row['logo'];
+                    echo '<div><img class="lozad" data-src="images/clients/' . $logo . '" alt="' . $name . '" style="object-fit: contain;width:100%"></div>';
                 }
                 ?>
             </div>
@@ -151,10 +151,10 @@
                 while ($row = mysqli_fetch_array($query)) {
                     $id = $row['id'];
                     $title = $row['title'];
-                    $pic_one = base64_encode($row['pic_one']);
+                    $pic_one = $row['pic_one'];
                     echo '
                     <a href="work.php?id=' . $id . '" class="project">
-                    <img src="data:image/png;base64,' . $pic_one . '" alt="' . $title . '" style="object-fit: cover;height: 100%;">
+                    <img class="lozad" data-src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: cover;height: 100%;">
                     </a>
                     ';
                 }
@@ -278,7 +278,9 @@
         });
     </script>
     <!-- End Scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>

@@ -146,6 +146,8 @@ if (isset($_GET['article'])) {
         }
     </script>
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61393f3f6d4fd60012450523&product=sticky-share-buttons" async="async"></script>
+    <script src="./js/main.js"></script>
+    
     <!-- End Scripts -->
 
 </body>
