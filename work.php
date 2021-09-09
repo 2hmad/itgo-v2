@@ -270,6 +270,7 @@ if (isset($_GET['id'])) {
             $thumbnailsSlider = $(".gallery-slider__thumbnails>div");
         $imagesSlider.slick({
             speed: 300,
+            infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             cssEase: 'linear',
