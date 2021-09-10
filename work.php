@@ -46,7 +46,7 @@ if (isset($_GET['id'])) {
     <?php 
     if(mb_strlen($details, 'UTF-8') <= 160) {
     ?>
-        <meta name="description" content="<?php echo "$details" ?>">';
+        <meta name="description" content="<?php echo "$details" ?>">
     <?php
     } else {
     ?>
