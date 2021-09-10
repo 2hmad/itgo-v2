@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <title>أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات</title>
     <link rel="icon" href="images/itgo32.jpg" sizes="32x32">
     <link rel="icon" href="images/itgo192.png" sizes="192x192">
-
+    
     <link rel="stylesheet" href="sass/main.css">
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css">
@@ -40,16 +40,23 @@
 
 <body>
 
-
+    
     <?php include('navbar.php') ?>
     <header class="header">
         <div class="overlay">
 
         </div>
         <div class="slick">
-            <div><img class="lozad" data-src="images/portfolio/Alwah/1.jpg" alt="تطبيق ألواح للقرأن الكريم"></div>
-            <div><img class="lozad" data-src="images/portfolio/Ghannely App/1.jpg" alt="تطبيق غنيلي لسماع وتنزيل الموسيقي"></div>
-            <div><img class="lozad" data-src="images/portfolio/WithPencil/1.jpg" alt="تطبيق WithPencil للتعليم الالكتروني"></div>
+            <?php
+            include 'connection.php';
+            $sql = "SELECT * FROM portfolio WHERE id IN (1, 2, 15)";
+            $query = mysqli_query($connect, $sql);
+            while ($row = mysqli_fetch_array($query)) {
+                $title = $row['title'];
+                $pic_one = $row['pic_one'];
+                echo '<div><img class="lozad" data-src="images/portfolio/' . $pic_one . '" alt="' . $title . '"></div>';
+            }
+            ?>
         </div>
     </header>
 
