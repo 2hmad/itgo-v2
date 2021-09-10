@@ -10,21 +10,7 @@ if (isset($_GET['id'])) {
             $details = $row['details'];
             $preview = $row['preview'];
         }
-    } else {
-        echo '
-                <script>
-                alert("عنوان URL خاطئ");
-                window.location.href="portfolio.php";
-                </script>
-                ';
     }
-} else {
-    echo '
-            <script>
-            alert("عنوان URL خاطئ");
-            window.location.href="portfolio.php";
-            </script>
-            ';
 }
 ?>
 
