@@ -45,9 +45,9 @@ if (isset($_GET['id'])) {
     <link rel="stylesheet" href="css/slick.css">
     <?php 
     if(strlen($details) <= 160) {
-        echo "<meta name='description' content='$details'>";
+        echo '<meta name="description" content="'.$details.'">';
     } else {
-        echo "<meta name='description' content='".mb_substr("$details", 0, 160, 'UTF-8')."'>";
+        echo '<meta name="description" content="'.mb_substr($details, 0, 160, 'UTF-8').'">';
     }    
     ?>
     <meta name="robots" content="index, follow">
