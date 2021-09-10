@@ -47,7 +47,7 @@ if (isset($_GET['id'])) {
     if(strlen($details) <= 160) {
         echo "<meta name='description' content='$details'>";
     } else {
-        echo "<meta name='description' content=".substr($details, 0, 160).">";
+        echo "<meta name='description' content='".substr($details, 0, 160)."'>";
     }    
     ?>
     <meta name="robots" content="index, follow">
