@@ -46,11 +46,11 @@ if (isset($_GET['id'])) {
     <?php 
     if(strlen("$details") <= 160) {
     ?>
-<meta name="description" content="<?php echo "$details" ?>">
+<meta name="description" content="<?php echo $details ?>">
     <?php
     } else {
     ?>
-<meta name="description" content="<?php echo mb_substr("$details", 0, 160) ?>">
+<meta name="description" content="<?php echo mb_substr($details, 0, 160) ?>">
     <?php
     }    
     ?>
