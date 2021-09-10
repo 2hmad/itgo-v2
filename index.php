@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
-    <meta name="description" content="شركة تصميم تطبيقات مصر - شركة برمجة وتصميم تطبيقات جوال في مصر - شركة إنشاء و برمجة و تصميم مواقع إلكترونية مصر-شركة تقنية معلومات.">
+    <meta name="description" content="شركة تصميم تطبيقات في مصر - شركة برمجة تطبيقات في مصر - شركة برمجة و تصميم مواقع إلكترونية في مصر - شركة تقنية معلومات.">
     <meta name="robots" content="index, follow">
 
     <!-- Twitter Card data -->
