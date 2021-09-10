@@ -44,7 +44,7 @@ if (isset($_GET['id'])) {
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet"> <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css">
     <meta name="description" content="<?php 
-    if(substr($details, 0) < 160) {
+    if(substr($details, 0) <= 160) {
         echo "$details";
     } else {
         echo mb_substr("$details", 0, 160);
