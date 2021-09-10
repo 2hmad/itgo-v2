@@ -106,65 +106,65 @@ if (isset($_GET['id'])) {
                                 if ($pic_two !== "" && $pic_three == "" && $pic_four == "" && $pic_five == "") {
                                     echo '
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_one . '" target="_blank"><img src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_one . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
 
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_two . '" target="_blank"><img src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_two . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
                                     ';
                                 } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four == "" && $pic_five == "") {
                                     echo '
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_one . '" target="_blank"><img src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_one . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
 
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_two . '" target="_blank"><img src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_two . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
 
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_three . '" target="_blank"><img src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_three . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
                                     ';
                                 } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four !== "" && $pic_five == "") {
                                     echo '
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_one . '" target="_blank"><img src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_one . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
         
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_two . '" target="_blank"><img src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_two . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
         
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_three . '" target="_blank"><img src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_three . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
         
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_four . '" target="_blank"><img src="images/portfolio/' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_four . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
                                         ';
                                 } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four !== "" && $pic_five !== "") {
                                     echo '
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_one . '" target="_blank"><img src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_one . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
 
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_two . '" target="_blank"><img src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_two . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
 
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_three . '" target="_blank"><img src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_three . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
 
                                         <div class="item">
-                                            <div class="img-fill"><a href="images/portfolio/' . $pic_four . '" target="_blank"><img src="images/portfolio/' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                            <div class="img-fill"><a href="images/portfolio/' . $pic_four . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
 
                                         <div class="item">
-                                        <div class="img-fill"><a href="images/portfolio/' . $pic_five . '" target="_blank"><img src="images/portfolio/' . $pic_five . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
+                                        <div class="img-fill"><a href="images/portfolio/' . $pic_five . '" target="_blank"><img class="lozad" src="images/portfolio/' . $pic_five . '" alt="' . $title . '" style="object-fit: contain;"></a></div>
                                         </div>
                                         ';
                                 }
@@ -191,65 +191,65 @@ if (isset($_GET['id'])) {
                             if ($pic_two !== "" && $pic_three == "" && $pic_four == "" && $pic_five == "") {
                                 echo '
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
                                     ';
                             } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four == "" && $pic_five == "") {
                                 echo '
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
                                     ';
                             } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four !== "" && $pic_five == "") {
                                 echo '
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
                                     ';
                             } elseif ($pic_two !== "" && $pic_three !== "" && $pic_four !== "" && $pic_five !== "") {
                                 echo '
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_one . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_two . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_three . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_four . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
     
                                     <div class="item">
-                                        <div class="img-fill"><img src="images/portfolio/' . $pic_five . '" alt="' . $title . '" style="object-fit: contain;"></div>
+                                        <div class="img-fill"><img class="lozad" src="images/portfolio/' . $pic_five . '" alt="' . $title . '" style="object-fit: contain;"></div>
                                     </div>
                                     ';
                             }
