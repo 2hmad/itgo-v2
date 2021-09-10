@@ -49,7 +49,7 @@
         <div class="slick">
             <?php
             include 'connection.php';
-            $sql = "SELECT * FROM portfolio WHERE id IN (1, 2, 15)";
+            $sql = "SELECT * FROM portfolio WHERE id IN (1, 2, 15, 17)";
             $query = mysqli_query($connect, $sql);
             while ($row = mysqli_fetch_array($query)) {
                 $title = $row['title'];
