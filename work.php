@@ -44,11 +44,11 @@ if (isset($_GET['id'])) {
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet"> <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css">
     <?php 
-    if(mb_strlen($details, 'UTF-8') <= 160) {
-        echo '<meta name="description" content="'.$details.'">';
-    } else {
-        echo '<meta name="description" content="'.mb_substr($details, 0, 160, 'UTF-8').'">';
-    }    
+    // if(mb_strlen($details, 'UTF-8') <= 160) {
+    //     echo '<meta name="description" content="'.$details.'">';
+    // } else {
+    //     echo '<meta name="description" content="'.mb_substr($details, 0, 160, 'UTF-8').'">';
+    // }    
     ?>
     <meta name="robots" content="index, follow">
 
