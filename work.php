@@ -43,18 +43,7 @@ if (isset($_GET['id'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet"> <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
     <link rel="stylesheet" href="css/slick.css">
-    <?php
-    ob_start();
-    if (strlen("$details") <= 160) {
-    ?>
-        <meta name="description" content="<?php echo $details ?>">
-    <?php
-    } else {
-    ?>
-        <meta name="description" content="<?php echo "".mb_substr($details, 0, 160)."" ?>">
-    <?php
-    }
-    ?>
+    <meta name="description" content="<?php echo $details ?>">
     <meta name="robots" content="index, follow">
 
     <!-- Twitter Card data -->
