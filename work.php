@@ -10,7 +10,7 @@ if (isset($_GET['id'])) {
             ob_start();
             $details = $row['details'];
             if (strlen("$details") >= 160) {
-                $short_desc = '<meta name="description" content="'.mb_substr($details, 0, 160).'">';
+                $short_desc = '<meta name="description" content="'.substr($details, 0, 160).'">';
             } else {
                 $short_desc = '<meta name="description" content="'.$details.'">';
             }
