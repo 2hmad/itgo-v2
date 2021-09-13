@@ -74,7 +74,7 @@ if (isset($_GET['article'])) {
 
     <section class="article-page">
         <div class="article-pic">
-            <?php echo '<img src="images/articles/'.$pic.'" alt="'.$title.'">' ?>
+            <?php echo '<img class="lozad" src="images/articles/'.$pic.'" alt="'.$title.'">' ?>
         </div>
         <div class="article-content">
 
@@ -206,6 +206,7 @@ if (isset($_GET['article'])) {
             alert("URL Copied.");
         }
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <!-- End Scripts -->
 
 </body>

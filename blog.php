@@ -58,7 +58,7 @@
                 <div class="article">
             <a href="article.php?article=' . $id . '" style="color: black;text-decoration:none">
             <div class="article-img">
-                    <img src="images/articles/'.$pic.'" alt="' . $title . '">
+                    <img class="lozad" src="images/articles/'.$pic.'" alt="' . $title . '">
                     </div>
                     <div class="article-content">
                     <h1 class="article-title">' . $title . '</h1>
@@ -89,6 +89,7 @@
         });
     </script>
     <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
     <!-- End Scripts -->
 
