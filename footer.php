@@ -1,7 +1,7 @@
 <footer>
     <div style="
     display: grid;
-    gap: 150px;
+    gap: 90px;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     width: 1400px;
     margin-right: auto;
