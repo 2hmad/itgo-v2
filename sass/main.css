@@ -1186,11 +1186,14 @@ section.blog-articles .article .article-content {
 }
 
 section.blog-articles .article .article-content .article-desc {
-  line-height: 1.5em;
   width: 100%;
-  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 2em;
+  font-size: 15px;
 }
 
 section.article-page {

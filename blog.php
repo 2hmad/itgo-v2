@@ -52,7 +52,7 @@
                 while ($row = mysqli_fetch_array($query)) {
                     $id = $row['id'];
                     $title = $row['title'];
-                    $content = $row['content'];
+                    $content = stripslashes($row['content']);
                     $pic = $row['pic'];
                     echo '
                 <div class="article">
