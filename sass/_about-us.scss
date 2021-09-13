@@ -1,44 +1,47 @@
 .header-about {
-    background-color: #223139;
-    min-height: 290px;
-    direction: rtl;
-    padding: 30px;
-    background: url('../images/how-to-find-the-best-app-dev-company-for-you-min.jpg') no-repeat;
-    background-size: cover;
+  background-color: #223139;
+  min-height: 290px;
+  direction: rtl;
+  padding: 30px;
+  background: url("../images/how-to-find-the-best-app-dev-company-for-you-min.jpg")
+    no-repeat;
+  background-size: cover;
 
-    h1 {
-        color: white;
-        margin-top: 8%;
-        @media (max-width: 568px) {
-            margin-top: 15%;
-        }
+  h1 {
+    color: white;
+    margin-top: 8%;
+    @media (max-width: 568px) {
+      margin-top: 15%;
+      line-height: 1.5em;
+      margin-bottom: 4%;
     }
+  }
 }
 
 .about {
-    direction: rtl;
-    padding: 65px;
+  direction: rtl;
+  padding: 65px;
 }
 
 .employees {
-    direction: rtl;
-    display: flex;
-    gap: 110px;
-    justify-content: center;
-    flex-wrap: wrap;
+  direction: rtl;
+  display: flex;
+  gap: 110px;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    .employee-card {
-        width: 200px;
-        min-height: 200px;
+  .employee-card {
+    width: 200px;
+    min-height: 200px;
 
-        img {
-            width: 200px;
-            height: 200px;
-            object-fit: contain;
-            margin-bottom: 2%;
-        }
-
-        text-align: center;
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 2%;
     }
-    margin-bottom: 15%;
+
+    text-align: center;
+  }
+  margin-bottom: 15%;
 }

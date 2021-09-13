@@ -74,7 +74,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 8px;
+  gap: 20px;
 }
 
 .sidebar .links a {
@@ -137,6 +137,7 @@ nav.navbar-fixed-top {
   border-bottom-width: 2px;
   padding-bottom: 1%;
   z-index: 9001;
+  padding: 10px;
 }
 
 nav.navbar-fixed-top .logo img {
@@ -330,6 +331,10 @@ nav.navbar-fixed-top .nav-links {
   right: 15%;
   background: white;
   border-radius: 5px;
+}
+
+.home-three .zindex-cont h2 {
+  line-height: 2em;
 }
 
 @media (min-width: 0) and (max-width: 1024px) {
@@ -639,6 +644,8 @@ footer .watermark a {
 @media (max-width: 568px) {
   .header-about h1 {
     margin-top: 15%;
+    line-height: 1.5em;
+    margin-bottom: 4%;
   }
 }
 
