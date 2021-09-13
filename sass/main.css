@@ -1185,6 +1185,11 @@ section.blog-articles .article .article-content {
   line-height: 4em;
 }
 
+section.blog-articles .article .article-content h1, section.blog-articles .article .article-content h2, section.blog-articles .article .article-content h3, section.blog-articles .article .article-content h4, section.blog-articles .article .article-content h5, section.blog-articles .article .article-content h6, section.blog-articles .article .article-content p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
 section.blog-articles .article .article-content .article-desc {
   width: 100%;
   display: -webkit-box;
@@ -1194,11 +1199,6 @@ section.blog-articles .article .article-content .article-desc {
   text-overflow: ellipsis;
   line-height: 2em;
   font-size: 15px;
-}
-
-section.blog-articles .article .article-content .article-desc h1, section.blog-articles .article .article-content .article-desc h2, section.blog-articles .article .article-content .article-desc h3, section.blog-articles .article .article-content .article-desc h4, section.blog-articles .article .article-content .article-desc h5, section.blog-articles .article .article-content .article-desc h6 {
-  font-size: 15px;
-  font-weight: 400;
 }
 
 section.article-page {
