@@ -51,14 +51,14 @@ if (isset($_GET['article'])) {
     <meta name="twitter:title" content="<?php echo "$title" ?> - أي تي جو شركة برمجة وتصميم المواقع والتطبيقات">
     <meta name="twitter:description" content="<?php echo "$content" ?>">
     <meta name="twitter:creator" content="ITGO">
-    <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
+    <meta name="twitter:image" content="https://itgo-solutions.com/images/articles/<?php echo "$pic" ?>">
 
     <!-- Open Graph data -->
     <meta property="fb:app_id" content="966242223397117">
     <meta property="og:title" content="<?php echo "$title" ?> - أي تي جو شركة برمجة وتصميم المواقع والتطبيقات" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://itgo-solutions.com" />
-    <meta property="og:image" content="https://itgo-solutions.com/images/itgo.jpg" />
+    <meta property="og:image" content="https://itgo-solutions.com/images/articles/<?php echo "$pic" ?>" />
     <meta property="og:description" content="<?php echo "$content" ?>" />
     <meta property="og:site_name" content="ITGO - أي تي جو" />
 
