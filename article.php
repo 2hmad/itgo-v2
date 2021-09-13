@@ -56,15 +56,13 @@ if (isset($_GET['article'])) {
         <div class="article-pic">
             <?php echo '<img src="data:image/png;base64,' . $pic . '">' ?>
         </div>
-        <!-- AddToAny BEGIN -->
-        <div>
-            <a href="https://www.addtoany.com/share#url=https%3A%2F%2Fitgo-solutions.com&amp;title=" target="_blank"><img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color:royalblue"></a>
-            <a href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fitgo-solutions.com&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color:royalblue"></a>
-            <a href="https://www.addtoany.com/add_to/linkedin?linkurl=https%3A%2F%2Fitgo-solutions.com&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color:royalblue"></a>
-            <a href="https://www.addtoany.com/add_to/facebook_messenger?linkurl=https%3A%2F%2Fitgo-solutions.com&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/facebook_messenger.svg" width="32" height="32" style="background-color:royalblue"></a>
-            <a href="https://www.addtoany.com/add_to/copy_link?linkurl=https%3A%2F%2Fitgo-solutions.com&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color:royalblue"></a>
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://itgo-solutions.com">
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_linkedin"></a>
+            <a class="a2a_button_facebook_messenger"></a>
+            <a class="a2a_button_copy_link"></a>
         </div>
-        <!-- AddToAny END -->
         <div class="article-content">
             <h1><?php echo "$title"; ?></h1>
             <p><?php echo "$content" ?></p>
@@ -156,7 +154,12 @@ if (isset($_GET['article'])) {
     </script>
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61393f3f6d4fd60012450523&product=sticky-share-buttons" async="async"></script>
     <script src="./js/main.js"></script>
-
+    <script>
+        var a2a_config = a2a_config || {};
+        a2a_config.locale = "ar";
+        a2a_config.num_services = 4;
+    </script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
     <!-- End Scripts -->
 
 </body>
