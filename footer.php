@@ -2,7 +2,7 @@
     <div style="
     display: grid;
     gap: 150px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     width: 1400px;
     margin-right: auto;
     margin-left: auto;
