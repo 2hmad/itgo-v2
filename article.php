@@ -56,14 +56,31 @@ if (isset($_GET['article'])) {
         <div class="article-pic">
             <?php echo '<img src="data:image/png;base64,' . $pic . '">' ?>
         </div>
-        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://itgo-solutions.com">
-            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-            <a class="a2a_button_facebook"></a>
-            <a class="a2a_button_linkedin"></a>
-            <a class="a2a_button_facebook_messenger"></a>
-            <a class="a2a_button_copy_link"></a>
-        </div>
         <div class="article-content">
+
+            <div class="social-share">
+                <a target="_blank" href="https://www.facebook.com/sharer.php?t=<?php echo "$title" ?>&u=https://itgo-solutions.com/article?article=<?php echo "$id" ?>">
+                    <div class="button_facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://itgo-solutions.com/article?article=<?php echo $id ?>&title=<?php echo "$title" ?>&source=itgo-solutions.com">
+                    <div class="button_linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/dialog/send?app_id=441811920490781&link=https://itgo-solutions.com/article?article=<?php echo $id ?>&redirect_uri=https://itgo-solutions.com">
+                    <div class="button_messenger">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </div>
+                </a>
+                <a onclick="copyToClipboard()">
+                    <div class="button_copy_link">
+                        <i class="fas fa-link"></i>
+                    </div>
+                </a>
+            </div>
+
             <h1><?php echo "$title"; ?></h1>
             <p><?php echo "$content" ?></p>
         </div>
@@ -158,7 +175,17 @@ if (isset($_GET['article'])) {
         a2a_config.locale = "ar";
         a2a_config.num_services = 4;
     </script>
-    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <script>
+        function copyToClipboard(text) {
+            var inputc = document.body.appendChild(document.createElement("input"));
+            inputc.value = window.location.href;
+            inputc.focus();
+            inputc.select();
+            document.execCommand('copy');
+            inputc.parentNode.removeChild(inputc);
+            alert("URL Copied.");
+        }
+    </script>
     <!-- End Scripts -->
 
 </body>

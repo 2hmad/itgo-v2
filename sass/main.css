@@ -1222,6 +1222,38 @@ section.article-page img {
   border-radius: 10px;
 }
 
+section.article-page .social-share {
+  margin-top: 2%;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+  direction: rtl;
+  margin-bottom: 2%;
+}
+
+section.article-page .social-share .button_facebook,
+section.article-page .social-share .button_linkedin,
+section.article-page .social-share .button_messenger,
+section.article-page .social-share .button_copy_link {
+  background: #223139;
+  width: 45px;
+  height: 45px;
+  font-size: 23px;
+  color: white;
+  border-radius: 3px;
+}
+
+section.article-page .social-share .button_facebook i,
+section.article-page .social-share .button_linkedin i,
+section.article-page .social-share .button_messenger i,
+section.article-page .social-share .button_copy_link i {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
 section.prog-languages {
   display: -ms-grid;
   display: grid;
