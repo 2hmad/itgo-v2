@@ -102,7 +102,7 @@ if (isset($_GET['article'])) {
             </div>
 
             <h1><?php echo "$title"; ?></h1>
-            <p><?php echo "$content" ?></p>
+            <div><?php echo "$content" ?></div>
         </div>
     </section>
 
