@@ -1197,7 +1197,8 @@ section.blog-articles .article .article-content .article-desc {
 }
 
 section.blog-articles .article .article-content .article-desc h1, section.blog-articles .article .article-content .article-desc h2, section.blog-articles .article .article-content .article-desc h3, section.blog-articles .article .article-content .article-desc h4, section.blog-articles .article .article-content .article-desc h5, section.blog-articles .article .article-content .article-desc h6 {
-  display: none;
+  font-size: 15px;
+  font-weight: 400;
 }
 
 section.article-page {
