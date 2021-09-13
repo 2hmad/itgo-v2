@@ -62,7 +62,7 @@
                     </div>
                     <div class="article-content">
                     <h1 class="article-title">' . $title . '</h1>
-                    <p class="article-desc">' . $content . '</p>
+                    <div class="article-desc">' . $content . '</div>
                 </div>
                 </a>
                 </div>
