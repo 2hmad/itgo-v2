@@ -56,7 +56,15 @@ if (isset($_GET['article'])) {
         <div class="article-pic">
             <?php echo '<img src="data:image/png;base64,' . $pic . '">' ?>
         </div>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-613fa05b5fd2ed25"></script>
+        <!-- AddToAny BEGIN -->
+        <div>
+            <a href="https://www.addtoany.com/share#url=https%3A%2F%2Fitgo-solutions.com&amp;title=" target="_blank"><img src="https://static.addtoany.com/buttons/a2a.svg" width="32" height="32" style="background-color:royalblue"></a>
+            <a href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fitgo-solutions.com&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/facebook.svg" width="32" height="32" style="background-color:royalblue"></a>
+            <a href="https://www.addtoany.com/add_to/linkedin?linkurl=https%3A%2F%2Fitgo-solutions.com&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/linkedin.svg" width="32" height="32" style="background-color:royalblue"></a>
+            <a href="https://www.addtoany.com/add_to/facebook_messenger?linkurl=https%3A%2F%2Fitgo-solutions.com&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/facebook_messenger.svg" width="32" height="32" style="background-color:royalblue"></a>
+            <a href="https://www.addtoany.com/add_to/copy_link?linkurl=https%3A%2F%2Fitgo-solutions.com&amp;linkname=" target="_blank"><img src="https://static.addtoany.com/buttons/link.svg" width="32" height="32" style="background-color:royalblue"></a>
+        </div>
+        <!-- AddToAny END -->
         <div class="article-content">
             <h1><?php echo "$title"; ?></h1>
             <p><?php echo "$content" ?></p>
