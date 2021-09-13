@@ -1051,7 +1051,7 @@ div.contact-form {
   direction: rtl;
   margin-top: 5%;
   margin-bottom: 5%;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   -webkit-box-shadow: 1px 2px 20px 0px #dedede;
           box-shadow: 1px 2px 20px 0px #dedede;
 }
@@ -1083,7 +1083,7 @@ div.contact-form .right-sec form input {
   width: 465px;
   margin-bottom: 3%;
   font-size: 15px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
 }
@@ -1092,7 +1092,7 @@ div.contact-form .right-sec form textarea {
   padding: 15px;
   height: 200px;
   font-size: 15px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
 }
@@ -1125,6 +1125,13 @@ div.contact-form .left-sec {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 568px) {
+  div.contact-form .left-sec div {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
 
 div.contact-form .left-sec h2 {
