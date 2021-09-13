@@ -1196,6 +1196,10 @@ section.blog-articles .article .article-content .article-desc {
   font-size: 15px;
 }
 
+section.blog-articles .article .article-content .article-desc h1, section.blog-articles .article .article-content .article-desc h2, section.blog-articles .article .article-content .article-desc h3, section.blog-articles .article .article-content .article-desc h4, section.blog-articles .article .article-content .article-desc h5, section.blog-articles .article .article-content .article-desc h6 {
+  display: none;
+}
+
 section.article-page {
   margin-top: 5%;
   margin-bottom: 5%;
