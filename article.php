@@ -56,7 +56,7 @@ if (isset($_GET['article'])) {
         <div class="article-pic">
             <?php echo '<img src="data:image/png;base64,' . $pic . '">' ?>
         </div>
-        <div class="sharethis-sticky-share-buttons"></div>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-613fa05b5fd2ed25"></script>
         <div class="article-content">
             <h1><?php echo "$title"; ?></h1>
             <p><?php echo "$content" ?></p>
@@ -148,7 +148,7 @@ if (isset($_GET['article'])) {
     </script>
     <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61393f3f6d4fd60012450523&product=sticky-share-buttons" async="async"></script>
     <script src="./js/main.js"></script>
-    
+
     <!-- End Scripts -->
 
 </body>
