@@ -189,6 +189,7 @@ if (isset($_GET['article'])) {
             $caption.removeClass('hide');
         }
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="./js/main.js"></script>
     <script>
         var a2a_config = a2a_config || {};
@@ -206,7 +207,6 @@ if (isset($_GET['article'])) {
             alert("URL Copied.");
         }
     </script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <!-- End Scripts -->
 
 </body>
