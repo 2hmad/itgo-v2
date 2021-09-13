@@ -42,14 +42,14 @@ if (isset($_GET['article'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
-    <meta name="description" content="<?php echo "$content" ?>">
+    <meta name="description" content="">
     <meta name="robots" content="index, follow">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://itgo-solutions.com">
     <meta name="twitter:title" content="<?php echo "$title" ?> - أي تي جو شركة برمجة وتصميم المواقع والتطبيقات">
-    <meta name="twitter:description" content="<?php echo "$content" ?>">
+    <meta name="twitter:description" content="">
     <meta name="twitter:creator" content="ITGO">
     <meta name="twitter:image" content="https://itgo-solutions.com/images/articles/<?php echo "$pic" ?>">
 
@@ -59,7 +59,7 @@ if (isset($_GET['article'])) {
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://itgo-solutions.com" />
     <meta property="og:image" content="https://itgo-solutions.com/images/articles/<?php echo "$pic" ?>" />
-    <meta property="og:description" content="<?php echo "$content" ?>" />
+    <meta property="og:description" content="" />
     <meta property="og:site_name" content="ITGO - أي تي جو" />
 
 </head>
@@ -74,7 +74,7 @@ if (isset($_GET['article'])) {
 
     <section class="article-page">
         <div class="article-pic">
-            <?php echo '<img class="lozad" src="images/articles/'.$pic.'" alt="'.$title.'">' ?>
+            <?php echo '<img class="lozad" src="images/articles/' . $pic . '" alt="' . $title . '">' ?>
         </div>
         <div class="article-content">
 
@@ -102,7 +102,7 @@ if (isset($_GET['article'])) {
             </div>
 
             <h1><?php echo "$title"; ?></h1>
-            <div><?php echo "$content" ?></div>
+            <div class="content"><?php echo "$content" ?></div>
         </div>
     </section>
 
@@ -206,6 +206,14 @@ if (isset($_GET['article'])) {
             inputc.parentNode.removeChild(inputc);
             alert("URL Copied.");
         }
+    </script>
+    <script>
+        var str = document.querySelector('.content').textContent;
+        var op = str.replace(/&nbsp;/g, '');
+
+        document.querySelector('meta[name="description"]').setAttribute("content", document.querySelector('.content').textContent = op);
+        document.querySelector('meta[name="twitter:description"]').setAttribute("content", document.querySelector('.content').textContent = op);
+        document.querySelector('meta[name="og:description"]').setAttribute("content", document.querySelector('.content').textContent = op);
     </script>
     <!-- End Scripts -->
 
