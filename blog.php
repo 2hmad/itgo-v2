@@ -53,12 +53,12 @@
                     $id = $row['id'];
                     $title = $row['title'];
                     $content = $row['content'];
-                    $pic = base64_encode($row['pic']);
+                    $pic = $row['pic'];
                     echo '
                 <div class="article">
             <a href="article.php?article=' . $id . '" style="color: black;text-decoration:none">
             <div class="article-img">
-                    <img src="data:image/png;base64,' . $pic . '" alt="' . $title . '">
+                    <img src="images/articles/'.$pic.'" alt="' . $title . '">
                     </div>
                     <div class="article-content">
                     <h1 class="article-title">' . $title . '</h1>
