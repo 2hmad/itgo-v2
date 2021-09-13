@@ -7,7 +7,7 @@ if (isset($_GET['article'])) {
     if (mysqli_num_rows($query) > 0) {
         while ($row = mysqli_fetch_array($query)) {
             $title = $row['title'];
-            $content = $row['content'];
+            $content = stripslashes($row['content']);
             $pic = $row['pic'];
         }
     } else {
