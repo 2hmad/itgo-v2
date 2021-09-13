@@ -8,7 +8,7 @@ if (isset($_GET['article'])) {
         while ($row = mysqli_fetch_array($query)) {
             $title = $row['title'];
             $content = $row['content'];
-            $pic = base64_encode($row['pic']);
+            $pic = $row['pic'];
         }
     } else {
         echo '
@@ -34,14 +34,34 @@ if (isset($_GET['article'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo "$title" ?> - أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات</title>
+    <title><?php echo "$title" ?> - أي تي جو شركة برمجة وتصميم المواقع والتطبيقات</title>
     <link rel="icon" href="images/itgo32.jpg" sizes="32x32">
     <link rel="icon" href="images/itgo192.png" sizes="192x192">
     <link rel="stylesheet" href="sass/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet"> <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
+    <meta name="description" content="<?php echo "$content" ?>">
+    <meta name="robots" content="index, follow">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://itgo-solutions.com">
+    <meta name="twitter:title" content="<?php echo "$title" ?> - أي تي جو شركة برمجة وتصميم المواقع والتطبيقات">
+    <meta name="twitter:description" content="<?php echo "$content" ?>">
+    <meta name="twitter:creator" content="ITGO">
+    <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="fb:app_id" content="966242223397117">
+    <meta property="og:title" content="<?php echo "$title" ?> - أي تي جو شركة برمجة وتصميم المواقع والتطبيقات" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://itgo-solutions.com" />
+    <meta property="og:image" content="https://itgo-solutions.com/images/itgo.jpg" />
+    <meta property="og:description" content="<?php echo "$content" ?>" />
+    <meta property="og:site_name" content="ITGO - أي تي جو" />
+
 </head>
 
 <body>
@@ -54,7 +74,7 @@ if (isset($_GET['article'])) {
 
     <section class="article-page">
         <div class="article-pic">
-            <?php echo '<img src="data:image/png;base64,' . $pic . '">' ?>
+            <?php echo '<img src="images/articles/'.$pic.'" alt="'.$title.'">' ?>
         </div>
         <div class="article-content">
 
