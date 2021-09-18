@@ -12,13 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
-    <meta name="description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك">
+    <meta name="description" content="شركة تصميم تطبيقات في مصر - شركة برمجة تطبيقات في مصر - شركة برمجة و تصميم مواقع إلكترونية في مصر - شركة تقنية معلومات.">
     <meta name="robots" content="index, follow">
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://itgo-solutions.com/about-us.php">
     <meta name="twitter:title" content="عن شركة أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات">
-    <meta name="twitter:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة">
+    <meta name="twitter:description" content="شركة تصميم تطبيقات في مصر - شركة برمجة تطبيقات في مصر - شركة برمجة و تصميم مواقع إلكترونية في مصر - شركة تقنية معلومات.">
     <meta name="twitter:creator" content="ITGO">
     <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
 
@@ -28,7 +28,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://itgo-solutions.com/about-us.php" />
     <meta property="og:image" content="https://itgo-solutions.com/images/itgo.jpg" />
-    <meta property="og:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة" />
+    <meta property="og:description" content="شركة تصميم تطبيقات في مصر - شركة برمجة تطبيقات في مصر - شركة برمجة و تصميم مواقع إلكترونية في مصر - شركة تقنية معلومات." />
     <meta property="og:site_name" content="ITGO - أي تي جو" />
 
 </head>

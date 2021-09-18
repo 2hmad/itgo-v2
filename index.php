@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://itgo-solutions.com">
     <meta name="twitter:title" content="شركة أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات">
-    <meta name="twitter:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة">
+    <meta name="twitter:description" content="شركة تصميم تطبيقات في مصر - شركة برمجة تطبيقات في مصر - شركة برمجة و تصميم مواقع إلكترونية في مصر - شركة تقنية معلومات.">
     <meta name="twitter:creator" content="ITGO">
     <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
 
@@ -32,7 +32,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://itgo-solutions.com" />
     <meta property="og:image" content="https://itgo-solutions.com/images/itgo.jpg" />
-    <meta property="og:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة" />
+    <meta property="og:description" content="شركة تصميم تطبيقات في مصر - شركة برمجة تطبيقات في مصر - شركة برمجة و تصميم مواقع إلكترونية في مصر - شركة تقنية معلومات." />
     <meta property="og:site_name" content="ITGO - أي تي جو" />
 
 
@@ -107,7 +107,7 @@
             <h1 style="font-size: 17px;font-weight: 900;color:#636363;margin-top: 3%;">شركة برمجة تطبيقات ومواقع في مصر</h1>
             <h2 style="font-size: 25px;margin-bottom:5%;margin-top: 5%;">لماذا يقع اختيارك على شركة "أي تي جو" لبرمجة و تصميم التطبيقات والمواقع ؟</h2>
             <p style="line-height: 2em;color:#7b7b7b;font-size: 18px;">
-                نحن نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، فهل لديك فكرة تطبيق او موقع لمشروعك ؟ في شركة أي تي جو لحلول البرمجيات ، نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة يحقق لك أفضل ربح. نحن نقدم لك أفضل جودة وأدق تصميم، نوفر لك دعم فني وضمان مجاني لمدة عام.
+                نحن نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، فهل لديك فكرة تطبيق او موقع لمشروعك ؟ في شركة أي تي جو لحلول البرمجيات ، نساعدك على إنشاء فكرتك يحقق لك أفضل ربح. نحن نقدم لك أفضل جودة وأدق تصميم، نوفر لك دعم فني وضمان مجاني لمدة عام.
             </p>
             <a href="about-us.php"><button type="button">اعرف اكثر عنا</button></a>
         </div>

@@ -58,7 +58,7 @@ if (isset($_GET['id'])) {
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://itgo-solutions.com/work.php?id=<?php echo "$id" ?>">
     <meta name="twitter:title" content="شركة أي تي جو - شركة برمجة وتصميم المواقع والتطبيقات">
-    <meta name="twitter:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة">
+    <meta name="twitter:description" content="شركة تصميم تطبيقات في مصر - شركة برمجة تطبيقات في مصر - شركة برمجة و تصميم مواقع إلكترونية في مصر - شركة تقنية معلومات.">
     <meta name="twitter:creator" content="ITGO">
     <meta name="twitter:image" content="https://itgo-solutions.com/images/itgo120.jpg">
 
@@ -68,7 +68,7 @@ if (isset($_GET['id'])) {
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://itgo-solutions.com/work.php?id=<?php echo "$id" ?>" />
     <meta property="og:image" content="https://itgo-solutions.com/images/itgo.jpg" />
-    <meta property="og:description" content="نساعدك كشركة تصميم وبرمجة تطبيقات الجوال والمواقع الالكترونية على تحويل فكرتك لنظام ناجح ، في شركة أي تي جو لحلول البرمجيات نساعدك على إنشاء فكرتك ، وتحويل فكرتك الرائعة لتطبيق او موقع اكثر روعة" />
+    <meta property="og:description" content="شركة تصميم تطبيقات في مصر - شركة برمجة تطبيقات في مصر - شركة برمجة و تصميم مواقع إلكترونية في مصر - شركة تقنية معلومات." />
     <meta property="og:site_name" content="ITGO - أي تي جو" />
 
 
